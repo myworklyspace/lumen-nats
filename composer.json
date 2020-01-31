@@ -1,0 +1,30 @@
+{
+    "name": "myworklyspace/lumen-nats",
+    "description": "Wrapper which makes talking to a NATS instance easy",
+    "type": "library",
+    "require": {
+		"php": ">=7.2.0",
+        "repejota/nats": "dev-master",
+        "tuupke/laravel-finalizer": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrey S.",
+            "email": "myworklyspace@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "WebDevil\\NatsWrapper\\": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "aliases": {
+                "NatsWrapper": "WebDevil\\NatsWrapper\\NatsWrapperFacade"
+            }
+        }
+    }
+}
